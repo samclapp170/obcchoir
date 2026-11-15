@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>OBC Choir</title>
+<style>
+  :root {
+    --bg: #f7f5f0; --card: #ffffff; --ink: #22262b; --muted: #5f6770;
+    --line: #e2ded3; --accent: #2f4a6b; --accent-ink: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14171a; --card: #1e2328; --ink: #eceef0; --muted: #9aa3ac;
+      --line: #2e353c; --accent: #8fb3dd; --accent-ink: #10202f;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 17px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  }
+  main { max-width: 520px; margin: 0 auto; padding: 36px 16px 48px; }
+  h1 { font-size: 28px; line-height: 1.15; margin: 0 0 6px; letter-spacing: -0.01em; }
+  .lead { color: var(--muted); margin: 0 0 28px; }
+  .links { display: grid; gap: 12px; }
+  a.card {
+    display: block; text-decoration: none; color: inherit;
+    background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+    padding: 16px 18px; min-height: 64px;
+  }
+  a.card:active { transform: translateY(1px); }
+  a.card:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+  .title { display: block; font-size: 19px; font-weight: 650; color: var(--accent); }
+  .sub { display: block; color: var(--muted); font-size: 15px; margin-top: 2px; }
+  footer { color: var(--muted); font-size: 14px; margin-top: 32px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>OBC Choir</h1>
+  <p class="lead">Everything for choir in one place.</p>
+  <nav class="links" aria-label="Choir links">
+    <a class="card" href="/attendance">
+      <span class="title">Attendance</span>
+      <span class="sub">You're expected at every rehearsal. Tap here only if you can't make one.</span>
+    </a>
+    <a class="card" href="/calendar">
+      <span class="title">Calendar</span>
+      <span class="sub">Rehearsals, services and special events.</span>
+    </a>
+    <a class="card" href="/music">
+      <span class="title">Music</span>
+      <span class="sub">PDF scores for the current music.</span>
+    </a>
+    <a class="card" href="/tracks">
+      <span class="title">Practice tracks</span>
+      <span class="sub">Learning tracks to rehearse with at home.</span>
+    </a>
+  </nav>
+  <footer>Have an idea for this page? Tell the choir director.</footer>
+</main>
+</body>
+</html>
